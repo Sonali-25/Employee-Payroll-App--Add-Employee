@@ -19,14 +19,14 @@
     </header>
 
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event)" onreset="resertForm();">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save(event)">
             <div class="form-head">
                 <header>Employee Payroll Form</header>
             </div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
-                <error-output class="text-error error-output" for="text"></error-output>
+                <error-output class="text-error" for="text"></error-output>
             </div>
 
             <div class="row-content">
@@ -164,15 +164,16 @@
             </div>
 
             <div class="button-parent">
-                <a href="./employeePayroll.html" class="resertButton button cancelButton">Cancel</a>
+                <a href="./employeePayroll.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button class="button submitButton" type="submit">Submit</button>
-                    <button class="button resertButton" type="reset">Reset</button>
+                    <button class="button resetButton" type="reset">Reset</button>
                 </div>
             </div> 
 
         </form>
     </div>
     <script src="EmpPayroll.js"></script> 
+    <script src="EmployeePayRoll.js"></script>
 </body>
 </html>
